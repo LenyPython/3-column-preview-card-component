@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: #f2f2f2;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+}
+
+button {
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  padding: 7px 25px;
+  background: #f2f2f2;
+}
+
+#root {
+  min-width: 200px;
+  width: 70vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 175px;
+  padding: 45px;
+}
+.card p {
+  margin-bottom: 80px;
+}
+
+div.orange {
+  background: #e38826;
+}
+div.orange button {
+  color: #e38826;
+}
+div.orange :hover {
+  background: #e38826;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+div.cyan {
+  background: #006970;
+}
+div.cyan button {
+  color: #006970;
+}
+div.cyan :hover {
+  background: #006970;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+div.darkCyan {
+  background: #004241;
+}
+div.darkCyan button {
+  color: #004241;
+}
+div.darkCyan :hover {
+  background: #004241;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .card {
+    padding-bottom: 20px;
+  }
+  .card p {
+    margin-bottom: 15px;
+  }
+
+  button {
+    font-size: 0.6rem;
+    border-radius: 15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

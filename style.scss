@@ -1,0 +1,75 @@
+$colors:(
+	orange:hsl(31,77%,52%),
+	cyan:hsl(184,100%,22%),
+	darkCyan:hsl(179,100%,13%)
+);
+$parag:hsla(0,0%,100%,0.75);
+$lightGray:hsl(0,0%,95%);
+
+
+body{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 90vh;
+	background: $lightGray;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 15px;
+}
+p{
+	color:$parag;
+	font-size: .7rem;
+	line-height: 1.6;
+}
+h1 {
+	color: $lightGray;
+	font-family: 'Big Shoulders Display', cursive;
+	text-transform: uppercase;
+}
+button {
+	border: 2px solid $lightGray;
+	border-radius: 25px;
+	padding:7px 25px;
+	background: $lightGray;
+}
+#root {
+	min-width: 200px;
+	width: 70vw;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.card {
+	width: 175px;
+	padding: 45px;
+	p{
+		margin-bottom: 80px;
+	}
+}
+
+@each $name, $color in $colors {
+	div.#{$name} {
+		background: #{$color};
+		button {
+			color:#{$color};
+		}
+		:hover {
+				background:#{$color};
+				color:$lightGray;
+				cursor: pointer;
+			}
+	}
+}
+
+@media(max-width: 760px){
+	.card{
+		padding-bottom: 20px;
+		p{
+			margin-bottom: 15px;
+		}
+	}
+	button {
+		font-size: .6rem;
+		border-radius: 15px;
+	}
+}
