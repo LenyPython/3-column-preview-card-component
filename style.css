@@ -28,11 +28,11 @@ button {
 }
 
 #root {
-  min-width: 200px;
-  width: 70vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .card {
@@ -79,7 +79,11 @@ div.darkCyan :hover {
   cursor: pointer;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 811px) {
+  #root {
+    flex-flow: column;
+  }
+
   .card {
     padding-bottom: 20px;
   }
